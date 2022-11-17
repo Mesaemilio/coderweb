@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
+        <link rel="preload" href="../css/normalize.css" as="styles">
+        <link href="../css/normalize.css" rel="stylesheet">
+        <link rel="preload" href="../css/style.css" as="styles">
+        <link href="../css/style.css" rel="stylesheet"> 
+        <title>Cuenta - ArteImpreso</title>
+    </head>
+
+    <body>
+        
+        <header class="header"> <!-- Seccion 1 -->
+            <h1><span>Arte</span>Impreso</h1>
+
+            <!-- Version del menu anterior en html -->
+            <!--<nav class="navegacionPrincipal contenedor">
+                <a href="../index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="nuestroTrabajo.html">Nuestro Trabajo</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="cuenta.html">Cuenta</a>
+            </nav> -->
+
+            <nav class="navegacionPrincipal">
+                <ul>
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="productos.html">Productos</a></li>
+                  <li><a href="nuestroservicios.html">Nuestro Servicios</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="#">Cuenta</a>
+                      <ul>
+                          <li><a href="cuenta.html">Mi cuenta</a></li>
+                      </ul>
+                  </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="contenedor"> <!-- Seccion 2 -->
+            <h2>Cuenta</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Acceder</legend>
+                    <div>
+                        <label for="usuario">Nombre de usuario o corre electrónico <span>*</span></label>
+                        <input type="text" placeholder="Tu nombre" id="usuario">
+                    </div>
+
+                    <div>
+                        <label for="contrasena">Contraseña <span>*</span></label>
+                        <input type="password" placeholder="" id="contrasena">
+                    </div>
+
+                    <input class="boton" type="submit" value="Acceder">
+                </fieldset>
+            </form>
+        </section>
+        
+        <section class="contenedor"> <!-- Seccion 3 -->
+            <form action="">
+                <fieldset>
+                    <legend>Registrarse</legend>
+                    <div>
+                        <label for="correo2">Dirección de correo electronico <span>*</span></label> 
+                        <input type="email" placeholder="Tu email" id="correo2">
+                    </div>
+
+                    <div>
+                        <label for="contrasena2">Contraseña</label>
+                        <input type="password" placeholder="" id="contrasena2">
+                    </div>
+
+                    <input class="boton" type="submit" value="Registrarse">
+                </fieldset>
+            </form>
+        </section>
+
+        <footer class="footer"> <!-- Seccion 4 -->
+            <div class="redes">
+                <a href="https://www.facebook.com/Arte-Impreso-101526491482665" target="_blank">
+                    <img src="../img/bxl-facebook.svg" alt="Logo de Facebook">
+                </a>
+                <a href="https://www.instagram.com/artee.impreso/?hl=es-la" target="_blank">
+                    <img src="../img/bxl-instagram.svg" alt="Logo de Instagram">
+                </a>
+            </div>
+            <div class="texto">
+                <p>2021 - Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
