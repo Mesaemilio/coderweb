@@ -10,74 +10,90 @@
         <link href="../css/normalize.css" rel="stylesheet">
         <link rel="preload" href="../css/style.css" as="styles">
         <link href="../css/style.css" rel="stylesheet"> 
-        <title>Contacto - Arte Impreso</title>
+        <title>Contacto - Sergio motors </title>
     </head>
+    
     <body>
+
         <header class="header"> <!-- Seccion 1 -->
-            <h1><span>Arte</span>Impreso</h1>
-
-            <!-- Version del menu anterior en html -->
-            <!--<nav class="navegacionPrincipal contenedor">
-                <a href="../index.html">Inicio</a>
-                <a href="productos.html">Productos</a>
-                <a href="nuestroTrabajo.html">Nuestro Trabajo</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="cuenta.html">Cuenta</a>
-            </nav> -->
-
-            <nav class="navegacionPrincipal">
-                <ul>
-                  <li><a href="../index.html">Inicio</a></li>
-                  <li><a href="productos.html">Productos</a></li>
-                  <li><a href="nuestroTrabajo.html">Nuestro Trabajo</a></li>
-                  <li><a href="contacto.html">Contacto</a></li>
-                  <li><a href="#">Cuenta</a>
-                      <ul>
-                          <li><a href="cuenta.html">Mi cuenta</a></li>
-                      </ul>
-                  </li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="contenedor"> <!-- Seccion 2 -->
-           <h2>Cuenta</h2>
-
-            <form action="">
-                <fieldset>
-                    <legend>Contactanos</legend>
-                    <div>
-                        <label for="nombre">Nombre <span>*</span></label>
-                        <input type="text" placeholder="Tu email" id="nombre">
-                    </div>
-                    <div>
-                        <label for="corre">Correo<span>*</span></label>
-                        <input type="email" placeholder="Tu email" id="correo">
-                    </div>
-
-                    <div>
-                        <label for="mensaje">Mensaje<span>*</span></label>
-                        <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <input class="boton" type="submit" value="Enviar">
-                </fieldset>
-            </form>
-        </section>
-
-        <footer class="footer"> <!-- Seccion 3 -->
-            <div class="redes">
-                <a href="https://www.facebook.com/Arte-Impreso-101526491482665" target="_blank">
-                    <img src="../img/bxl-facebook.svg" alt="Logo de Facebook">
-                </a>
-                <a href="https://www.instagram.com/artee.impreso/?hl=es-la" target="_blank">
-                    <img src="../img/bxl-instagram.svg" alt="Logo de Instagram">
-                </a>
+            <div class="grid">
+                <div class="textoLogo">
+                    <a href="../index.html">
+                        <h1><span>Sergio</span>Motors</h1>
+                    </a>
+                    
+                </div>
+                <nav class="navegacionPrincipal">
+                    <a href="../index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="nuestroservicio.html">Nuestro Servicios</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="cuenta.html">Cuenta</a>
+                </nav>
             </div>
-            <div class="texto">
-                <p>2021 - Todos los derechos reservados.</p>
+        </header> 
+
+        <section class="contacto"> <!-- Seccion 2 -->
+
+            <div class="tituloSecundario">
+                <h2>Contacto</h2>
+            </div>
+
+            <div class="grid">
+                <div class="textosContacto">
+                    <h2>No te quedes con las dudas, ponete en contacto con nosotros y te respondemos al instante.</h2>
+                    
+                    <hr>
+    
+                    <div class="correoContacto">
+                        <img src="../img/iconoCorreo.png" alt="">
+                        <p>sergiomotors@gmail.com</p>
+                    </div>
+                </div>
+            
+                <form class="formulario" action="">
+                    <fieldset>
+                        <legend>Contactanos</legend>
+                        <div class="contenedorCampos">
+                            <div class="campo">
+                                <label for="nombre">Nombre <span>*</span></label>
+                                <input type="text" placeholder="Tu email" id="nombre" required>
+                            </div>
+                            <div class="campo">
+                                <label for="corre">Correo <span>*</span></label>
+                                <input type="email" placeholder="Tu email" id="correo" required>
+                            </div>
+                            <div class="campo">
+                                <label for="mensaje">Mensaje <span>*</span></label>
+                                <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+                            </div> 
+                        </div>                    
+                    </fieldset>
+                    <div class="botonMain">
+                        <input class="boton botonInput" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+            
+        <hr class="lineaDivisora">
+
+        <footer class="footer"> <!-- Seccion 4 -->
+            <div class="grid">
+                <div class="redesFooter">
+                    <a href="https://es-la.facebook.com/" target="_blank">
+                        <img src="img/bxl-facebook.svg" alt="Logo de Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="img/bxl-instagram.svg" alt="Logo de Instagram">
+                    </a>
+                    <div class="textosFooter">
+                        <p>2021 - Todos los derechos reservados.</p>
+                    </div>  
+                </div>                    
             </div>
         </footer>
 
     </body>
+
 </html>

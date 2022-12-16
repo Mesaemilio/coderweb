@@ -11,90 +11,97 @@
         <link href="../css/normalize.css" rel="stylesheet">
         <link rel="preload" href="../css/style.css" as="styles">
         <link href="../css/style.css" rel="stylesheet"> 
-        <title>Cuenta - ArteImpreso</title>
+        <title>Cuenta - sergiomotors</title>
     </head>
 
+    
     <body>
         
         <header class="header"> <!-- Seccion 1 -->
-            <h1><span>Arte</span>Impreso</h1>
+            <div class="grid">
+                <div class="textoLogo">
+                    <a href="../index.html">
+                        <h1><span>Sergio</span>Motors</h1>
+                    </a>
+                    
+                </div>
+                <nav class="navegacionPrincipal">
+                    <a href="../index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="nuestroservicio.html">Nuestro Trabajo</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="cuenta.html">Cuenta</a>
+                </nav>
+            </div>
+        </header> 
 
-            <!-- Version del menu anterior en html -->
-            <!--<nav class="navegacionPrincipal contenedor">
-                <a href="../index.html">Inicio</a>
-                <a href="productos.html">Productos</a>
-                <a href="nuestroTrabajo.html">Nuestro Trabajo</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="cuenta.html">Cuenta</a>
-            </nav> -->
-
-            <nav class="navegacionPrincipal">
-                <ul>
-                  <li><a href="../index.html">Inicio</a></li>
-                  <li><a href="productos.html">Productos</a></li>
-                  <li><a href="nuestroservicios.html">Nuestro Servicios</a></li>
-                  <li><a href="contacto.html">Contacto</a></li>
-                  <li><a href="#">Cuenta</a>
-                      <ul>
-                          <li><a href="cuenta.html">Mi cuenta</a></li>
-                      </ul>
-                  </li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="contenedor"> <!-- Seccion 2 -->
+        <div class="tituloSecundario">
             <h2>Cuenta</h2>
-            <form action="">
-                <fieldset>
-                    <legend>Acceder</legend>
-                    <div>
-                        <label for="usuario">Nombre de usuario o corre electrónico <span>*</span></label>
-                        <input type="text" placeholder="Tu nombre" id="usuario">
-                    </div>
-
-                    <div>
-                        <label for="contrasena">Contraseña <span>*</span></label>
-                        <input type="password" placeholder="" id="contrasena">
-                    </div>
-
-                    <input class="boton" type="submit" value="Acceder">
-                </fieldset>
-            </form>
-        </section>
+        </div>
         
-        <section class="contenedor"> <!-- Seccion 3 -->
-            <form action="">
-                <fieldset>
-                    <legend>Registrarse</legend>
-                    <div>
-                        <label for="correo2">Dirección de correo electronico <span>*</span></label> 
-                        <input type="email" placeholder="Tu email" id="correo2">
-                    </div>
+        <section class="cuentas"> <!-- Seccion 2 -->
+            <div class="grid">
+                <form class="formulario formularioIzquierda" action="">
+                    <fieldset>
+                        <legend>Acceder</legend>
+                        <div class="contenedorCampos">
+                            <div class="campo">
+                                <label for="usuario">Nombre de usuario o corre electrónico <span>*</span></label>
+                                <input type="text" placeholder="Tu nombre" id="usuario" required>
+                            </div>
 
-                    <div>
-                        <label for="contrasena2">Contraseña</label>
-                        <input type="password" placeholder="" id="contrasena2">
+                            <div class="campo">
+                                <label for="contrasena">Contraseña <span>*</span></label>
+                                <input type="password" placeholder="Contraseña" id="contrasena" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="botonFormulario">
+                        <input class="boton botonInput" type="submit" value="Acceder">
                     </div>
+                </form>
+            
+                <form class="formulario" action="">
+                    <fieldset>
+                        <legend>Registrarse</legend>
+                        <div class="contenedorCampos">
+                            <div class="campo">
+                                <label for="correo2">Dirección de correo electronico <span>*</span></label> 
+                                <input type="email" placeholder="Tu email" id="correo2" required>
+                            </div>
+        
+                            <div class="campo">
+                                <label for="contrasena2">Contraseña</label>
+                                <input type="password" placeholder="Contraseña" id="contrasena2" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="botonFormulario">
+                        <input class="boton botonInput" type="submit" value="Registrarse">
+                    </div>
+                </form>
+            </div>
 
-                    <input class="boton" type="submit" value="Registrarse">
-                </fieldset>
-            </form>
-        </section>
+        </section>  
+
+        <hr class="lineaDivisora">
 
         <footer class="footer"> <!-- Seccion 4 -->
-            <div class="redes">
-                <a href="https://www.facebook.com/Arte-Impreso-101526491482665" target="_blank">
-                    <img src="../img/bxl-facebook.svg" alt="Logo de Facebook">
-                </a>
-                <a href="https://www.instagram.com/artee.impreso/?hl=es-la" target="_blank">
-                    <img src="../img/bxl-instagram.svg" alt="Logo de Instagram">
-                </a>
-            </div>
-            <div class="texto">
-                <p>2021 - Todos los derechos reservados.</p>
+            <div class="grid">
+                <div class="redesFooter">
+                    <a href="https://es-la.facebook.com/" target="_blank">
+                        <img src="img/bxl-facebook.svg" alt="Logo de Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="img/bxl-instagram.svg" alt="Logo de Instagram">
+                    </a>
+                    <div class="textosFooter">
+                        <p>2021 - Todos los derechos reservados.</p>
+                    </div>  
+                </div>                    
             </div>
         </footer>
 
     </body>
+
 </html>
